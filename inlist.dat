@@ -1,0 +1,35 @@
+### general
+gyre_dir = /lhome/timothyv/Bin/gyre/gyre-6.0.1/                          # GYRE installation directory (v5.x or v6.x)
+maindir = /lhome/timothyv/LiGang_binaries/scripts/Theoretical_toy-model/ # main work directory
+
+
+### binary parameters
+P_orb = 1.00                                                             # orbital period in days
+incl_deg = 70                                                            # inclination angle in degrees
+third_light = 0.0                                                        # fraction of third light
+
+### primary
+mass1 = 1.5                                                              # mass of the primary in Msun
+radius1 = 1.65                                                           # radius of the primary in Rsun
+ld_coeff1 = 0.60                                                         # linear limb darkening coefficient of the primary
+light_contribution1 = 0.6                                                # fractional light contribution of the primary
+
+### secondary
+mass2 = 1.4                                                              # mass of the secondary in Msun
+radius2 = 1.5                                                            # radius of the secondary in Rsun
+ld_coeff2 = 0.60                                                         # linear limb darkening coefficient of the secondary
+light_contribution2 = 0.4                                                # fractional light contribution of the secondary
+
+
+### g-mode pulsation 
+pulsating_star = primary                                                 # indicate in which star the pulsation is present
+puls_freq = 1.6                                                          # observed pulsation frequency in d^{-1}
+puls_ampl = 8.0                                                          # peak pulsation amplitude on the stellar surface (in mmag)  
+kval     = 0             		                                 # mode identification (k,m)
+mval     = 1
+distortion_factor = 2.0                                                  # distortion factor of the pulsations
+
+
+### simulation settings
+N_forb_cycles = 100                                                       # number of orbital cycles to be simulated
+Nsample_per_cycle = 500                                                  # number of simulated data points per orbital cycle
